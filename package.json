@@ -1,0 +1,24 @@
+{
+  "name": "react-example",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port=3000 --host=0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "node --input-type=module -e \"import { rmSync } from 'node:fs'; for (const path of ['dist', 'server.js']) rmSync(path, { recursive: true, force: true });\""
+  },
+  "dependencies": {
+    "gsap": "^3.15.0",
+    "lucide-react": "^0.546.0",
+    "react": "^19.0.1",
+    "react-dom": "^19.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-react": "^6.1.1",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.3.0"
+  }
+}
